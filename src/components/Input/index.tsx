@@ -6,7 +6,7 @@ import React, {
   useImperativeHandle,
   forwardRef,
 } from 'react';
-import { TextInputProps, ViewStyle, StyleProp } from 'react-native';
+import { TextInputProps } from 'react-native';
 import { useField } from '@unform/core';
 
 import { Container, TextInput, Icon } from './styles';
@@ -14,7 +14,7 @@ import { Container, TextInput, Icon } from './styles';
 interface InputProps extends TextInputProps {
   name: string;
   icon: string;
-  containerStyle?: StyleProp<ViewStyle>;
+  containerStyle?: {};
 }
 
 interface InputValueReference {
@@ -62,7 +62,7 @@ const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = (
         inputValueRef.current.value = value;
         inputElementRef.current.setNativeProps({ text: value });
       },
-      clearValue() {
+      clearValue(ref: any) {
         inputValueRef.current.value = '';
         inputElementRef.current.clear();
       },
@@ -71,10 +71,16 @@ const Input: React.ForwardRefRenderFunction<InputRef, InputProps> = (
 
   return (
     <Container style={containerStyle} isFocused={isFocused} isErrored={!!error}>
-      <Icon isFilled={isFilled} isFocused={isFocused} name={icon} size={20} />
+      <Icon
+        name={icon}
+        size={20}
+        color={isFocused || isFilled ? '#cb962d' : '#566a8a'}
+      />
+
       <TextInput
         ref={inputElementRef}
         keyboardAppearance="dark"
+        placeholderTextColor="#566a8a"
         defaultValue={defaultValue}
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}

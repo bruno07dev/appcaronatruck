@@ -1,44 +1,49 @@
 import styled from 'styled-components/native';
-import { Platform } from 'react-native';
 import { getBottomSpace } from 'react-native-iphone-x-helper';
+import { Platform } from 'react-native';
 
 export const Container = styled.View`
   flex: 1;
   align-items: center;
   justify-content: center;
   padding: 0 30px ${Platform.OS === 'android' ? 150 : 40}px;
-`;
-
-export const Logo = styled.ImageBackground`
-  margin-top: -50px;
-  border-radius: 50px;
+  background: #ededed;
 `;
 
 export const Title = styled.Text`
-  font-size: 20px;
-  color: #2a323c;
-  font-family: 'Lucida Sans';
-  font-weight: bold;
-  margin-top: 20px;
+  font-size: 24px;
+  color: #101f37;
+  font-family: 'RobotoSlab-Medium';
+  margin: 64px 0 24px;
 `;
 
-export const Text = styled.Text`
-  text-align: center;
-  font-size: 20px;
-  color: #212121;
-  font-family: 'Lucida Sans';
-  left: 10;
-  right: 10;
-  bottom: -50;
+export const ForgotPassword = styled.TouchableOpacity`
+  margin-top: 24px;
 `;
 
-export const StartButton = styled.TouchableOpacity`
+export const ForgotPasswordText = styled.Text`
+  color: #7fb4d7;
+  font-size: 16px;
+  font-family: 'RobotoSlab-Regular';
+`;
+export const CreateAccountButton = styled.TouchableOpacity`
   position: absolute;
-  left: 10;
-  right: 10;
+  left: 0;
   bottom: 0;
-  padding: 16px 0 ${8 + getBottomSpace()}px;
+  right: 0;
+  background: #ededed;
+  border-top-width: 1px;
+  border-color: #101f37;
+  padding: 16px 0 ${16 + getBottomSpace()}px;
+
   justify-content: center;
   align-items: center;
   flex-direction: row;
+`;
+
+export const CreateAccountButtonText = styled.Text`
+  color: #cb962d;
+  font-size: 18px;
+  font-family: 'RobotoSlab-Regular';
+  margin-left: 16px;
 `;

@@ -1,27 +1,23 @@
 import React from 'react';
-import { View, StyleSheet, ActivityIndicator } from 'react-native';
+import { View, ActivityIndicator } from 'react-native';
+
 import AuthRoutes from './auth.routes';
-import { useAuth } from '../contexts/auth';
 import AppRoutes from './app.routes';
 
-const styles = StyleSheet.create({
-  activeIndicator: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+import { useAuth } from '../hooks/auth';
 
 const Routes: React.FC = () => {
-  const { loading, signed } = useAuth();
+  const { user, loading } = useAuth();
+
   if (loading) {
     return (
-      <View style={styles.activeIndicator}>
-        <ActivityIndicator size="large" color="#101f37" />
+      <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+        <ActivityIndicator size="large" color="#999" />
       </View>
     );
   }
 
-  return signed ? <AppRoutes /> : <AuthRoutes />;
+  return user ? <AppRoutes /> : <AuthRoutes />;
 };
+
 export default Routes;
