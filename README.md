@@ -3,7 +3,7 @@
 </h1>
 
 <h3 align="center">
-  React Native Application for caronatruck project
+  React Native Application for CaronaTruck project
 </h3>
 
 <p align="center">The best way to schedule your service!</p>
@@ -108,4 +108,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-Made with 💜 by Bruno Cardoso 👋 [See my linkedin](https://www.linkedin.com/in/bruno-s-cardoso/)
+> Status Project: Project in development :heavy_check_mark:
+# 🎬 Desenvolvedores
+
+[<img src="https://avatars.githubusercontent.com/u/66931016?s=460&u=68bdaab4339d594139e0f083a0346b30ddb8402d&v=4" width=115 > <br> <sub> Bruno Cardoso </sub>](https://www.linkedin.com/in/bruno-s-cardoso/) |
+| :---: |
+
+Made with 💜 by Bruno Cardoso 👋
