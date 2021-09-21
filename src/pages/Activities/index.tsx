@@ -103,6 +103,10 @@ const Activities: React.FC = () => {
     navigation.goBack();
   }, [navigation]);
 
+  const navigateToSetLocal = useCallback(() => {
+    navigation.navigate('Local');
+  }, [navigation]);
+
   const [loader, setLoader] = useState(false);
   const [profilePic, setProfilePic] = useState(imageurl);
 
@@ -228,8 +232,8 @@ const Activities: React.FC = () => {
                 />
               </TouchableOpacity>
 
-              <ConfirmationButton onPress={() => formRef.current?.submitForm()}>
-                Confirmar
+              <ConfirmationButton onPress={navigateToSetLocal}>
+                Continuar
               </ConfirmationButton>
             </ContainerActivitie>
           </ScrollView>
