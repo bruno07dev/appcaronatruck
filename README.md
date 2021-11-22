@@ -16,7 +16,7 @@
   <a href="#-license">License</a>
 </p>
 
-## 💇🏻‍♂️ About the project
+## 🚚 About the project
 
 Soon
 
