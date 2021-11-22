@@ -18,6 +18,8 @@
 
 ## 🚚 About the project
 
+We are CaronaTruck, a platform that helps define, create and connect people to a global community of freight and truck services that celebrate common interests while minimizing cultural, geographic and social differences through online and offline communications and interactions.
+
 Soon
 
 Project in development
