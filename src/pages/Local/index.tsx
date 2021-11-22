@@ -91,6 +91,10 @@ const Local: React.FC = () => {
     [navigation],
   );
 
+  const navigateToSetPackageReview = useCallback(() => {
+    navigation.navigate('PackageReview');
+  }, [navigation]);
+
   const handleGoBack = useCallback(() => {
     navigation.goBack();
   }, [navigation]);
@@ -123,7 +127,7 @@ const Local: React.FC = () => {
                   containerStyle={{
                     backgroundColor: '#ededed',
                   }}
-                  keyboardType="numeric"
+                  autoCapitalize="words"
                   name="type"
                   icon="map"
                   placeholder="De(endereço completo)"
@@ -142,7 +146,7 @@ const Local: React.FC = () => {
                 />
               </Form>
 
-              <ConfirmationButton onPress={() => formRef.current?.submitForm()}>
+              <ConfirmationButton onPress={navigateToSetPackageReview}>
                 Continuar
               </ConfirmationButton>
             </ContainerLocal>

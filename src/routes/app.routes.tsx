@@ -7,6 +7,8 @@ import Activities from '../pages/Activities';
 import Local from '../pages/Local';
 import Call from '../pages/Call';
 import Inbox from '../pages/Inbox';
+import PackageReview from '../pages/PackageReview';
+import Payment from '../pages/Payment';
 
 const App = createStackNavigator();
 
@@ -23,6 +25,8 @@ const AppRoutes: React.FC = () => (
     <App.Screen name="Local" component={Local} />
     <App.Screen name="Call" component={Call} />
     <App.Screen name="Inbox" component={Inbox} />
+    <App.Screen name="PackageReview" component={PackageReview} />
+    <App.Screen name="Payment" component={Payment} />
   </App.Navigator>
 );
 

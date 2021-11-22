@@ -36,9 +36,11 @@ export const BackButton = styled.TouchableOpacity`
 
 export const Title = styled.Text`
   font-size: 24px;
-  color: #101f37;
+  color: #478db8;
   font-family: 'RobotoSlab-Medium';
+  font-weight: bold;
   margin: 12px 0 12px;
+  margin-bottom: 20px;
 `;
 
 export const TitleImagePicker = styled.Text`

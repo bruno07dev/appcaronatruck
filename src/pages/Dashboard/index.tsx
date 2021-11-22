@@ -96,7 +96,7 @@ const Dashboard: React.FC = () => {
                   <Icon
                     name="phone"
                     size={28}
-                    color="#ffba5c"
+                    color="#478db8"
                     onPress={() =>
                       Linking.openURL(`tel:${provider.phoneNumber}`)
                     }

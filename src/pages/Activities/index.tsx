@@ -181,7 +181,7 @@ const Activities: React.FC = () => {
                   containerStyle={{
                     backgroundColor: '#ededed',
                   }}
-                  keyboardType="numeric"
+                  autoCapitalize="words"
                   name="type"
                   icon="tag"
                   placeholder="Tipo de Carga"
@@ -192,7 +192,7 @@ const Activities: React.FC = () => {
                   containerStyle={{
                     backgroundColor: '#ededed',
                   }}
-                  autoCapitalize="words"
+                  keyboardType="numeric"
                   name="wheight"
                   icon="anchor"
                   placeholder="Peso da Carga"

@@ -35,13 +35,13 @@ export const ProviderListInfoContainer = styled.View`
 export const ProvidersListInfo = styled.Text`
   font-size: 16px;
   text-align: center;
-  color: #3e3b47;
+  color: #478db8;
   font-family: 'RobotoSlab-Medium';
 `;
 
 export const UpdatedInfo = styled.Text`
   flex-direction: column;
-  font-size: 10px;
+  font-size: 14px;
   text-align: left;
   margin-top: 10px;
   margin-left: -280px;
@@ -77,7 +77,8 @@ export const ProviderInfo = styled.View`
 export const ProviderName = styled.Text`
   font-family: 'RobotoSlab-Medium';
   font-size: 20px;
-  color: #ff9000;
+  color: #478db8;
+  font-weight: bold;
 `;
 export const ProviderMeta = styled.View`
   flex-direction: row;
