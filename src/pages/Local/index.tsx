@@ -28,6 +28,7 @@ import {
   Title,
   Header,
   HeaderTitle,
+  Button,
 } from './styles';
 
 interface ActivitieFormData {
@@ -145,10 +146,11 @@ const Local: React.FC = () => {
                   returnKeyType="next"
                 />
               </Form>
-
-              <ConfirmationButton onPress={navigateToSetPackageReview}>
-                Continuar
-              </ConfirmationButton>
+              <Button>
+                <ConfirmationButton onPress={navigateToSetPackageReview}>
+                  Continuar
+                </ConfirmationButton>
+              </Button>
             </ContainerLocal>
           </ScrollView>
         </KeyboardAvoidingView>

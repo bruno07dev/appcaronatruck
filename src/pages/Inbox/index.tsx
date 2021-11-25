@@ -78,12 +78,12 @@ const Inbox: React.FC = () => {
               <Icon name="chevron-left" size={26} color="#00a6ff" />
             </BackButton>
             <ProviderAvatar
-              source={img}
               style={{
-                borderRadius: 50,
+                borderRadius: 0,
                 borderColor: '#a9a7b1',
                 borderWidth: 1,
               }}
+              source={img}
             />
 
             <ProviderInfo>

@@ -10,14 +10,15 @@ export const Container = styled.View`
 `;
 
 export const BackButton = styled.TouchableOpacity`
-  margin-top: 90px;
+  margin-top: 20px;
 `;
 
 export const Title = styled.Text`
-  font-size: 20px;
-  color: #101f37;
+  font-size: 24px;
+  color: #478db8;
   font-family: 'RobotoSlab-Medium';
-  margin: 12px 0 12px;
+  margin: 20px 0 40px;
+  font-weight: bold;
 `;
 
 export const UserAvatarButton = styled.TouchableOpacity`
@@ -25,8 +26,8 @@ export const UserAvatarButton = styled.TouchableOpacity`
 `;
 
 export const UserAvatar = styled.Image`
-  width: 130px;
-  height: 130px;
+  width: 150px;
+  height: 150px;
   border-radius: 98px;
   align-self: center;
 `;

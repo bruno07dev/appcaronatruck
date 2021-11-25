@@ -39,13 +39,9 @@ export const Title = styled.Text`
   color: #478db8;
   font-family: 'RobotoSlab-Medium';
   font-weight: bold;
-  margin: 12px 0 12px;
-  margin-bottom: 20px;
+  margin: 12px 0 40px;
 `;
 
-export const TitleImagePicker = styled.Text`
-  font-size: 24px;
-  color: #101f37;
-  font-family: 'RobotoSlab-Medium';
-  margin: 12px 0 12px;
+export const Button = styled.View`
+  margin-top: 30px;
 `;

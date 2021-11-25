@@ -45,13 +45,13 @@ export const Title = styled.Text`
 
 export const Image = styled.Image`
   height: 150px;
-  width: 250px;
+  width: 300px;
   border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 40px;
   border-color: #101f37;
   border-width: 1px;
+  align-self: center;
 `;
 
 export const TitleTypeCharge = styled.Text`

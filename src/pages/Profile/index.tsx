@@ -170,7 +170,7 @@ const Profile: React.FC = () => {
         >
           <Container>
             <BackButton onPress={handleGoBack}>
-              <Icon name="chevron-left" size={24} color="#101f37" />
+              <Icon name="chevron-left" size={30} color="#478db8" />
             </BackButton>
 
             <UserAvatarButton onPress={handleUpdateAvatar}>

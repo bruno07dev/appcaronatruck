@@ -1,10 +1,10 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { Linking } from 'react-native';
 import 'react-native-gesture-handler';
+import { useNavigation } from '@react-navigation/native';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-import { useNavigation } from '@react-navigation/native';
 import { useAuth } from '../../hooks/auth';
 import api from '../../services/api';
 import Footer from '../../components/Footer';
@@ -12,7 +12,16 @@ import Footer from '../../components/Footer';
 import {
   Container,
   Header,
+  MenuHeaderIcon,
+  NotificationButton,
+  InfoButtonContainer,
+  InfoButton,
   HeaderTitle,
+  HeaderSubtitle,
+  SearchBarContainer,
+  SearchSource,
+  SearchIcon,
+  SearchSourceTitle,
   ProviderListInfoContainer,
   ProvidersListInfo,
   UpdatedInfo,
@@ -58,7 +67,37 @@ const Dashboard: React.FC = () => {
   return (
     <Container>
       <Header>
-        <HeaderTitle>Filtrar fretes por</HeaderTitle>
+        <MenuHeaderIcon>
+          <Icon name="bars" size={24} color="#101f37" />
+        </MenuHeaderIcon>
+        <NotificationButton>
+          <Icon name="bell" size={24} color="#101f37" />
+        </NotificationButton>
+        <InfoButtonContainer>
+          <InfoButton>? Ajuda</InfoButton>
+        </InfoButtonContainer>
+        <HeaderTitle>Fretes</HeaderTitle>
+        <HeaderSubtitle>Filtrar fretes por:</HeaderSubtitle>
+        <SearchBarContainer>
+          <SearchSource>
+            <SearchIcon>
+              <Icon name="circle" size={16} color="#ffba5c" />
+            </SearchIcon>
+            <SearchSourceTitle>Origem</SearchSourceTitle>
+          </SearchSource>
+          <SearchSource>
+            <SearchIcon>
+              <Icon name="map-marker" size={16} color="#3e3b47" />
+            </SearchIcon>
+            <SearchSourceTitle>Destino</SearchSourceTitle>
+          </SearchSource>
+          <SearchSource>
+            <SearchIcon>
+              <Icon name="truck" size={16} color="#3e3b47" />
+            </SearchIcon>
+            <SearchSourceTitle>Veículo</SearchSourceTitle>
+          </SearchSource>
+        </SearchBarContainer>
       </Header>
 
       <ProviderListInfoContainer>

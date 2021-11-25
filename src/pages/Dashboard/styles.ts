@@ -10,23 +10,95 @@ export const Container = styled.View`
 `;
 
 export const Header = styled.View`
-  padding: 30px;
+  padding: 50px;
   background: #ffba5c;
+  border-radius: 20px;
+  margin-top: -30px;
 
   flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
 
-export const HeaderTitle = styled.Text`
+export const MenuHeaderIcon = styled(RectButton)`
+  flex-direction: column;
+  align-self: flex-start;
+  margin-left: -30px;
+`;
+
+export const NotificationButton = styled(RectButton)`
+  flex-direction: column;
+  align-self: flex-end;
+  margin-right: -30px;
+  margin-top: -20px;
+`;
+
+export const InfoButtonContainer = styled(RectButton)`
+  background-color: #101f37;
+  width: 90px;
+  height: 30px;
+  border-radius: 5px;
+  align-self: flex-end;
+  margin-right: 10px;
   margin-top: -30px;
+  flex-direction: row;
+`;
+
+export const InfoButton = styled.Text`
+  color: #fff;
+  font-size: 20px;
+  font-family: 'RobotoSlab-Regular';
+  font-weight: bold;
+  margin-left: 10px;
+`;
+
+export const HeaderTitle = styled.Text`
+  margin-top: -32px;
+  margin-left: -200px;
+  color: #212121;
+  font-size: 24px;
+  font-family: 'RobotoSlab-Regular';
+  font-weight: bold;
+`;
+
+export const HeaderSubtitle = styled.Text`
+  margin-top: 10px;
+  margin-left: -250;
   color: #212121;
   font-size: 16px;
   font-family: 'RobotoSlab-Regular';
 `;
 
+export const SearchBarContainer = styled.View`
+  flex-direction: row;
+`;
+
+export const SearchSource = styled(RectButton)`
+  background-color: #fff;
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  margin-bottom: -30px;
+`;
+
+export const SearchIcon = styled.View`
+  margin-left: 10px;
+`;
+
+export const SearchSourceTitle = styled.Text`
+  color: #3e3b47;
+  font-size: 16px;
+  font-family: 'RobotoSlab-Regular';
+  margin-left: 10px;
+`;
+
 export const ProviderListInfoContainer = styled.View`
-  padding: 30px;
+  padding: 15px;
   background: #fff;
 
   justify-content: center;
@@ -43,7 +115,6 @@ export const UpdatedInfo = styled.Text`
   flex-direction: column;
   font-size: 14px;
   text-align: left;
-  margin-top: 10px;
   margin-left: -280px;
   color: #3e3b47;
   font-family: 'RobotoSlab-Medium';

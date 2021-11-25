@@ -39,7 +39,7 @@ export const Title = styled.Text`
   color: #478db8;
   font-family: 'RobotoSlab-Medium';
   font-weight: bold;
-  margin: 12px 0 12px;
+  margin: 12px 0 40px;
   text-align: center;
 `;
 
@@ -48,18 +48,17 @@ export const TitleImagePicker = styled.Text`
   color: #478db8;
   font-family: 'RobotoSlab-Medium';
   font-weight: bold;
-  margin: 12px 0 12px;
-  margin-top: 0px;
+  margin: 30px 0 40px;
   text-align: center;
 `;
 
 export const Image = styled.Image`
+  align-self: center;
   height: 150px;
-  width: 250px;
+  width: 300px;
   border-radius: 5px;
   margin: 0px;
-  margin-left: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   border-color: #101f37;
   border-width: 1px;
 `;

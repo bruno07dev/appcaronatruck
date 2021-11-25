@@ -116,30 +116,25 @@ const PackageReview: React.FC = () => {
               </View>
 
               <View>
-                <TitleLocal>Endereço de coleta e entrega</TitleLocal>
+                <TitleLocal>Origem e destino</TitleLocal>
               </View>
 
               <View>
-                <TitleOrigin>Origem:</TitleOrigin>
+                <TitleOrigin>Coleta:</TitleOrigin>
                 <InfoContainer />
               </View>
 
               <View>
-                <TitleDestiny>Destino:</TitleDestiny>
+                <TitleDestiny>Entrega:</TitleDestiny>
                 <InfoContainer />
               </View>
 
               <View>
-                <TitleCost>Data e Valores</TitleCost>
+                <TitleCost>Valores</TitleCost>
               </View>
 
               <View>
-                <TitleShippingCost>Valor do frete:</TitleShippingCost>
-                <InfoContainer />
-              </View>
-
-              <View>
-                <TitlePostDate>Data da coleta:</TitlePostDate>
+                <TitleShippingCost>Pagamento:</TitleShippingCost>
                 <InfoContainer />
               </View>
               <Button>
