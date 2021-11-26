@@ -24,8 +24,8 @@ Soon
 
 Project in development
 
-To see the **api**, click here:
-To see the **web client**, click here:
+To see the **api**, click here: [CaronaTruck Rest Api]((https://github.com/bruno07dev/caronatruckapi)</br>
+To see the **web client**, click here: Soon
 
 ## 🚀 Technologies
 
